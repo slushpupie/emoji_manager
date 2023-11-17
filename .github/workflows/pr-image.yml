@@ -1,12 +1,14 @@
 name: Build PR Image
 
 on: issue_comment
-permissions:
-  issues: write
+
   
 jobs:
   build:
     runs-on: ubuntu-latest
+    
+    permissions:
+      issues: write
 
     #if: |
     #  github.event.issue.pull_request && contains(github.event.comment.body, '/build-docker-image') &&
