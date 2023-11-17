@@ -21,7 +21,7 @@ jobs:
         uses: xt0rted/slash-command-action@v2
         with:
           command: build_docker_image
-          # reaction: "true"
+          reaction: "false"
           # reaction-type: eyes
           allow-edits: "false"
           permission-level: admin
