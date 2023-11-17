@@ -1,7 +1,9 @@
 name: Build PR Image
 
 on: issue_comment
-
+permissions:
+  issues: write
+  
 jobs:
   build:
     runs-on: ubuntu-latest
