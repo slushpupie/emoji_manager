@@ -12,11 +12,11 @@ jobs:
     #    github.event.comment.author_association == 'OWNER' )
 
     steps:
-      - name: Check for /build-docker-image
+      - name: Check for /build_docker_image
         id: command
         uses: xt0rted/slash-command-action@v2
         with:
-          command: build-docker-image
+          command: build_docker_image
           reaction: "true"
           reaction-type: eyes
           allow-edits: "false"
